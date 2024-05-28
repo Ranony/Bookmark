@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/09a884c72e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title text-center my-5">
+            <h1>Bookmarker</h1>
+        </div>
+        <div class="line" id="line1"></div>
+        <div class="sub-title text-center mt-3 mb-5">
+            <h2 class="d-inline">
+                <i class="fa-solid fa-bookmark fs-4"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark fs-4"></i>
+            </h2>
+        </div>
+        <div class="inputs d-grid align-content-center">
+            <label class="form-lable mb-2" for="siteName">
+                <i class="fa-solid fa-book"></i>
+                <span>Site Name</span>
+            </label>
+            <input oninput="validateInputs(this)" class="form-control mb-4" type="text" name="siteName" id="siteName"
+                placeholder="Bookmark Name">
+            <div class="alert alert-danger d-none">
+                <small>The website site name must start by capital letter and at least 3 letters</small>
+            </div>
+            <label class="form-lable mb-2" for="siteUrl">
+                <i class="fa-solid fa-link"></i>
+                <span>Site URL</span>
+            </label>
+            <input oninput="validateInputs(this)" class="form-control" type="url" name="siteUrl" id="siteUrl"
+                placeholder="Bookmark URL">
+            <div class="alert alert-danger d-none mt-3">
+                <small>The website site url must start by (https://) and ends by (.com or .net)</small>
+            </div>
+            <button class="btn m-auto border mt-3 text-white" onclick="submitNewBookmark()">Submit</button>
+        </div>
+        <div class="line" id="line2"></div>
+        <table class="w-100 text-center mt-3 bg-white">
+            <thead class="border-bottom">
+                <tr>
+                    <th class="py-2">Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableContent">
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+body {
+    background-color: #f7ecde;
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 264px;
+    height: 20px;
+    background-color: #FEC260;
+    position: absolute;
+    left: 40%;
+    top: 64%;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+h1:hover::after {
+    height: 40px;
+    top: 32%;
+}
+
+h2 {
+    font-family: "Righteous", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+label span {
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.btn {
+    width: 150px;
+    height: 40px;
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #CF502C;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: #aa3413;
+
+}
+
+
+th {
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+td {
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visit {
+    width: 80px;
+    height: 40px;
+    background-color: #8A9E23;
+    transition: all 0.5s;
+}
+
+.visit:hover {
+    background-color: #6f8506;
+}
+
+.delete {
+    width: 85px;
+    height: 40px;
+    transition: all 0.5s;
+}
+
+.delete:hover {
+    background-color: #D30820 !important;
+}
